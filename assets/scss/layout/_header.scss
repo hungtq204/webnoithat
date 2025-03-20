@@ -62,3 +62,49 @@ line-height: normal;
 a{
 	text-decoration: none;
 }
+//cate
+
+.categorie{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+   gap: 10px;
+    justify-content: center;
+  }
+  .categorie > .image{
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .categorie > .image > img{
+   
+  border-radius: 10px;
+    width: calc(100% - 10px); 
+    max-width: 300px; 
+    height: auto;
+  
+  }
+  .categorie > .image >li{
+    list-style: none;
+    margin-top: 10px;
+  }
+  .categorie > .image > li > a{
+    color: var(--Font-Color, #333);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+    text-decoration: none;
+  }
+  .title-categorie{
+  text-align: center;
+  
+  }
+  .title-categorie>li{
+    list-style: none;
+    margin-top: 10px;
+  }
+  		
