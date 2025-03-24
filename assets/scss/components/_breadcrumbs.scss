@@ -1,0 +1,72 @@
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.background-container {
+  width: 100%;
+  height: 316px;
+  position: relative;
+}
+
+.background-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(3px);
+}
+
+.container-shop {
+  position: absolute; /* Đặt container-shop lên trên background-img */
+  top: 50%; /* Căn giữa theo chiều dọc */
+  left: 50%; /* Căn giữa theo chiều ngang */
+  transform: translate(-50%, -50%); /* Dịch chuyển để căn giữa chính xác */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-shop {
+  color: #000;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.breadcrumb-shop {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-top: 2px;
+  font-size: 16px;
+  color: #000000;
+  font-family: Poppins;
+}
+
+.breadcrumbs-item {
+  font-weight: 500;
+}
+
+.breadcrumbs-shop {
+  font-weight: 300;
+}
+
+.breadcrumbs-arrow {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 991px) {
+  .title-shop {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .title-shop {
+    font-size: 32px;
+  }
+}
