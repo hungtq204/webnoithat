@@ -1,0 +1,299 @@
+.hero-secttion {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Chiều cao của Hero Section */
+  background-color: #f4f4f4; /* Màu nền dự phòng */
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(3px); /* Làm mờ hình ảnh nền */
+}
+
+.herro-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #333;
+}
+
+.hero-logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+.breadcrumb span {
+  font-weight: 500;
+}
+
+.breadcrumb svg {
+  width: 20px;
+  height: 20px;
+  fill: #555;
+}
+
+/* Main Content */
+.main-content {
+  max-width: 1440px;
+  margin: 50px auto;
+  padding: 0 97px;
+  display: flex;
+  gap: 30px;
+}
+
+/* Blog Posts */
+.blog-posts {
+  flex: 1;
+}
+
+.blog-post {
+  margin-bottom: 50px;
+}
+
+.post-image {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.post-meta {
+  display: flex;
+  gap: 35px;
+  margin-bottom: 12px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 16px;
+  color: #9f9f9f;
+}
+
+.post-title {
+  font-size: 30px;
+  color: #000;
+  margin-bottom: 12px;
+}
+
+.post-excerpt {
+  font-size: 15px;
+  color: #9f9f9f;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.read-more {
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 393px;
+}
+
+.search-container {
+  width: 311px;
+  height: 58px;
+  border: 1px solid #9f9f9f;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  margin-bottom: 40px;
+}
+
+.search-input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.sidebar-title {
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.category-list {
+  list-style: none;
+}
+
+.category-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #9f9f9f;
+  margin-bottom: 20px;
+}
+
+.recent-post {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.recent-post-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.recent-post-title {
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.recent-post-date {
+  font-size: 12px;
+  color: #9f9f9f;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 38px;
+  margin: 50px 0;
+}
+
+.page-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #f9f1e7;
+}
+
+/* Features Section */
+.features {
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  gap: 88px;
+  background-color: #faf3ea;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.feature-title {
+  font-size: 25px;
+  font-weight: 600;
+  color: #242424;
+  margin-bottom: 2px;
+}
+
+.feature-description {
+  font-size: 20px;
+  color: #898989;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .header-container {
+    padding: 0 20px;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .main-content {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .features {
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 50px 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .brand-name {
+    font-size: 24px;
+  }
+
+  .header-icons {
+    gap: 20px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .post-meta {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .newsletter-input {
+    width: 100%;
+  }
+
+  .main-footer {
+    padding: 24px 20px;
+  }
+
+  .feature-item {
+    width: 100%;
+  }
+}
